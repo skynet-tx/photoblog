@@ -8,7 +8,7 @@
         .module("videoBlog")
         .config(config);
 
-    function config($routeProvider, $logProvider, $locationProvider, $dropdownProvider) {
+    function config($routeProvider, $logProvider, $locationProvider) {
         $logProvider.debugEnabled(true);
 
         $routeProvider.

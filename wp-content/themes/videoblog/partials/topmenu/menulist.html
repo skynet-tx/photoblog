@@ -1,14 +1,5 @@
 <ul class="dropdown-menu col-xs-11 col-sm-11" role="menu">
-    <li>
-       <a href="/Item1">Item 1</a>
-    </li>
-    <li>
-        <a href="/Item2">Item 2</a>
-    </li>
-    <li>
-        <a href="/Item3">Item 3</a>
-    </li>
-    <li>
-        <a href="/Item4">Item 4</a>
+    <li ng-repeat="link in menuList">
+       <a href="{{link.url}}">{{link.title}}</a>
     </li>
 </ul>

@@ -22,6 +22,7 @@ function mytheme_enqueue_scripts() {
   // register our app.js, which has a dependency on angular-core
   wp_register_script('angular-app', get_template_directory_uri().'/js/app/app.js', array('angular-core'), null, false);
   wp_register_script('route-config', get_template_directory_uri().'/js/app/route-config.js', array('angular-core'), null, false);
+  wp_register_script('getServices', get_template_directory_uri().'/js/app/services/getServices.js', array('angular-core'), null, false);
   wp_register_script('topMenu', get_template_directory_uri().'/js/app/topMenu.js', array('angular-core'), null, false);
   wp_register_script('HomeCtrl', get_template_directory_uri().'/js/app/home/HomeCtrl.js', array('angular-core'), null, false);
 
@@ -40,9 +41,12 @@ function mytheme_enqueue_scripts() {
 
   wp_enqueue_script('angular-app');
   wp_enqueue_script('route-config');
+  wp_enqueue_script('getServices');
   wp_enqueue_script('topMenu');
   wp_enqueue_script('HomeCtrl');
 
+  // we need to create a JavaScript variable to store our API endpoint...
+   wp_localize_script( 'angular-core', 'AppAPI', array( 'url' => get_bloginfo('wpurl').'/wp-json/') ); // this is the API address of the JSON API plugin
   //... and useful information such as the theme directory and website url
   wp_localize_script( 'angular-core', 'BlogInfo', array( 'url' => get_template_directory_uri().'/', 'site' => get_bloginfo('wpurl')) );
 }
