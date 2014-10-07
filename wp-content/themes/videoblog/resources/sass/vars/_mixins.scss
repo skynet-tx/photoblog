@@ -1,0 +1,16 @@
+@mixin calc($property, $expression){
+	/* Firefox */
+	#{$property}: -moz-calc(#{$expression});
+	/* WebKit */
+	#{$property}: -webkit-calc(#{$expression});
+	/* Opera */
+	#{$property}: -o-calc(#{$expression});
+	/* Standard */
+	#{$property}: calc(#{$expression});
+}
+
+@mixin rotate($degree){
+	-ms-transform: rotate(#{$degree}deg); /* IE 9 */
+	-webkit-transform: rotate(#{$degree}deg); /* Chrome, Safari, Opera */
+	transform: rotate(#{$degree}deg);
+}

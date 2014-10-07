@@ -1,0 +1,13 @@
+rvm:
+  - 1.8.7
+  - 1.9.2
+  - 1.9.3
+  - jruby-18mode
+  - jruby-19mode
+  - rbx
+  - ree
+  - 2.0.0
+gemfile:
+  - gemfiles/sass_3_2.gemfile
+  - gemfiles/sass_master.gemfile
+script: "bundle exec rake test features"

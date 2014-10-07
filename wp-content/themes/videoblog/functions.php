@@ -1,0 +1,50 @@
+<?php
+function mytheme_enqueue_scripts() {
+  // Add the main stylesheet.
+  wp_enqueue_style( 'genericons', get_template_directory_uri() . '/resources/sass/css/style.css', array(), '3.03' );
+
+  // register Zeptojs
+  wp_register_script('zeptojs', get_template_directory_uri().'/js/thirdparty/zepto.min.js', array(), null, false);
+   // register AngularJS
+  wp_register_script('angular-core', get_template_directory_uri().'/js/core/angular.min.js', array(), null, false);
+  wp_register_script('angular-core', get_template_directory_uri().'/js/core/angular-route.min.js', array("angular-core"), null, false);
+  wp_register_script('angular-resource', get_template_directory_uri().'/js/core/angular-resource.min.js', array("angular-core"), null, false);
+  wp_register_script('angular-route', get_template_directory_uri().'/js/core/angular-route.min.js', array("angular-core"), null, false);
+  wp_register_script('angular-animate', get_template_directory_uri().'/js/core/angular-animate.min.js', array("angular-core"), null, false);
+  wp_register_script('angular-loader', get_template_directory_uri().'/js/core/angular-loader.min.js', array("angular-core"), null, false);
+  wp_register_script('angular-messages', get_template_directory_uri().'/js/core/angular-messages.min.js', array("angular-core"), null, false);
+  wp_register_script('angular-strap', get_template_directory_uri().'/js/thirdparty/angular-strap-2.1.1/angular-strap.min.js', array("angular-core"), null, false);
+  wp_register_script('angular-strap.tpl', get_template_directory_uri().'/js/thirdparty/angular-strap-2.1.1/angular-strap.tpl.min.js', array("angular-core"), null, false);
+
+  //Lodash js
+  wp_register_script('lodashjs', get_template_directory_uri().'/js/thirdparty/lodash.underscore.js', array(), null, false);
+
+  // register our app.js, which has a dependency on angular-core
+  wp_register_script('angular-app', get_template_directory_uri().'/js/app/app.js', array('angular-core'), null, false);
+  wp_register_script('route-config', get_template_directory_uri().'/js/app/route-config.js', array('angular-core'), null, false);
+  wp_register_script('topMenu', get_template_directory_uri().'/js/app/topMenu.js', array('angular-core'), null, false);
+  wp_register_script('HomeCtrl', get_template_directory_uri().'/js/app/home/HomeCtrl.js', array('angular-core'), null, false);
+
+  // enqueue all scripts
+  wp_enqueue_script('zeptojs');
+  wp_enqueue_script('angular-core');
+  wp_enqueue_script('angular-route');
+  wp_enqueue_script('angular-resource');
+  wp_enqueue_script('angular-animate');
+  wp_enqueue_script('angular-loader');
+  wp_enqueue_script('angular-messages');
+  wp_enqueue_script('angular-strap');
+  wp_enqueue_script('angular-strap.tpl');
+
+  wp_enqueue_script('lodashjs');
+
+  wp_enqueue_script('angular-app');
+  wp_enqueue_script('route-config');
+  wp_enqueue_script('topMenu');
+  wp_enqueue_script('HomeCtrl');
+
+  //... and useful information such as the theme directory and website url
+  wp_localize_script( 'angular-core', 'BlogInfo', array( 'url' => get_template_directory_uri().'/', 'site' => get_bloginfo('wpurl')) );
+}
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
+?>

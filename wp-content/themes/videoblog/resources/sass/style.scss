@@ -1,0 +1,10 @@
+$images: '../../../assets/img';
+
+// Third party
+@import "bootstap_3_2_0/stylesheets/bootstrap";
+@import "font-awesome-4.2.0/scss/font-awesome";
+@import "angular-motion-0.3.3/dist/angular-motion.min";
+
+/** Widgets **/
+@import 'vars/all';
+@import 'widgets/all';
