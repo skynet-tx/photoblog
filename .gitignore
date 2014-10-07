@@ -1,2 +1,2 @@
-.idea/*
-wp-content/themes/videoblog/.sass-cache/*
+/.idea/*
+/wp-content/themes/videoblog/.sass-cache/*
