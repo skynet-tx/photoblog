@@ -10,26 +10,23 @@
 
     homeCtrl.$inject = [
         "$log",
-        "$http"
+		"getServices",
+		"logger"
     ];
 
-    function homeCtrl($log, $http){
+    function homeCtrl($log, getServices, logger){
         var vm = this;
 
-        $http({
-            method: 'GET',
-//            url: "/wp-json/posts", // derived from the rootScope
-//            params: {
-//                "filter[posts_per_page]": 10,
-//                "filter[order]": "desc"
-//            }
-            url: "/wp-json/pages"
-        }).
-            success(function(data, status, headers, config) {
-                vm.postdata = data;
-            }).
-            error(function(data, status, headers, config) {
-            });
+		getServices.getAPIEndpoint().then(function (response) {
+			if (response.statusText === "OK") {
+				angular.element("title").text(response.data.name + " | Home");
+				logger.info("test", "test msg", 'ttt');
+			} else {
+				console.log(response);
+			}
+		});
+
+
 
 
     }

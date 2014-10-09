@@ -15,6 +15,7 @@ function mytheme_enqueue_scripts() {
   wp_register_script('angular-messages', get_template_directory_uri().'/js/core/angular-messages.min.js', array("angular-core"), null, false);
   wp_register_script('angular-strap', get_template_directory_uri().'/js/thirdparty/angular-strap-2.1.1/angular-strap.min.js', array("angular-core"), null, false);
   wp_register_script('angular-strap.tpl', get_template_directory_uri().'/js/thirdparty/angular-strap-2.1.1/angular-strap.tpl.min.js', array("angular-core"), null, false);
+  wp_register_script('toaster', get_template_directory_uri().'/js/thirdparty/AngularJS-Toaster/toaster.js', array("angular-core"), null, false);
 
   //Lodash js
   wp_register_script('lodashjs', get_template_directory_uri().'/js/thirdparty/lodash.underscore.js', array(), null, false);
@@ -23,6 +24,8 @@ function mytheme_enqueue_scripts() {
   wp_register_script('angular-app', get_template_directory_uri().'/js/app/app.js', array('angular-core'), null, false);
   wp_register_script('route-config', get_template_directory_uri().'/js/app/route-config.js', array('angular-core'), null, false);
   wp_register_script('getServices', get_template_directory_uri().'/js/app/services/getServices.js', array('angular-core'), null, false);
+  wp_register_script('logger', get_template_directory_uri().'/js/app/services/logger.js', array('angular-core'), null, false);
+
   wp_register_script('topMenu', get_template_directory_uri().'/js/app/topMenu.js', array('angular-core'), null, false);
   wp_register_script('HomeCtrl', get_template_directory_uri().'/js/app/home/HomeCtrl.js', array('angular-core'), null, false);
 
@@ -36,12 +39,14 @@ function mytheme_enqueue_scripts() {
   wp_enqueue_script('angular-messages');
   wp_enqueue_script('angular-strap');
   wp_enqueue_script('angular-strap.tpl');
+  wp_enqueue_script('toaster');
 
   wp_enqueue_script('lodashjs');
 
   wp_enqueue_script('angular-app');
   wp_enqueue_script('route-config');
   wp_enqueue_script('getServices');
+  wp_enqueue_script('logger');
   wp_enqueue_script('topMenu');
   wp_enqueue_script('HomeCtrl');
 

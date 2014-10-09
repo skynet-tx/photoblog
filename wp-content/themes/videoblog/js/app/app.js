@@ -9,7 +9,8 @@
             'ngRoute',
             'ngResource',
             'ngAnimate',
-            "mgcrea.ngStrap"
+            "mgcrea.ngStrap",
+			"toaster"
         ]);
 
 })(angular);
