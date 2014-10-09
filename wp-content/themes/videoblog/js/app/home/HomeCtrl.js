@@ -10,17 +10,17 @@
 
     homeCtrl.$inject = [
         "$log",
-		"getServices",
-		"logger"
+		"getServices"
     ];
 
-    function homeCtrl($log, getServices, logger){
+    function homeCtrl($log, getServices){
         var vm = this;
 
+
+		// Init site title
 		getServices.getAPIEndpoint().then(function (response) {
 			if (response.statusText === "OK") {
 				angular.element("title").text(response.data.name + " | Home");
-				logger.info("test", "test msg", 'ttt');
 			} else {
 				console.log(response);
 			}
