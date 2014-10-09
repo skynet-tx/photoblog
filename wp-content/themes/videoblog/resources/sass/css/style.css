@@ -12237,6 +12237,28 @@ body .container-fluid {
   margin-top: 15px;
 }
 
+/* line 1, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/_shadow-container.scss */
+.shadow-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: #000000;
+}
+/* line 9, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/_shadow-container.scss */
+.shadow-container .loader-spinner {
+  opacity: 1;
+  top: 50%;
+  position: relative;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  background: url("../../images/spinner.gif") no-repeat center center;
+  background-size: 50% 50%;
+}
+
 /* line 2, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/top-menu/_top-menu.scss */
 #main-top-menu .menu-btn {
   margin-bottom: 10px;

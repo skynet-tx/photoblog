@@ -10,12 +10,14 @@
 
     homeCtrl.$inject = [
         "$log",
-		"getServices"
+		"getServices",
+		"$bgShadow"
     ];
 
-    function homeCtrl($log, getServices){
+    function homeCtrl($log, getServices, $bgShadow){
         var vm = this;
 
+		$bgShadow.start();
 
 		// Init site title
 		getServices.getAPIEndpoint().then(function (response) {
