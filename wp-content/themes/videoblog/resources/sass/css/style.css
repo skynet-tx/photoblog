@@ -1,5 +1,1608 @@
 @charset "IBM437";
 @import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+/**
+ * angular-motion
+ * @version v0.3.3 - 2014-06-23
+ * @link https://github.com/mgcrea/angular-motion
+ * @author Olivier Louvignes <olivier@mg-crea.com>
+ * @license MIT License, http://www.opensource.org/licenses/MIT
+ */
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-scale {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-scale.ng-enter, .am-fade-and-scale.am-fade-and-scale-add, .am-fade-and-scale.ng-hide-remove, .am-fade-and-scale.ng-move {
+  -webkit-animation-name: fadeAndScaleIn;
+  animation-name: fadeAndScaleIn;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-scale.ng-leave, .am-fade-and-scale.am-fade-and-scale-remove, .am-fade-and-scale.ng-hide {
+  -webkit-animation-name: fadeAndScaleOut;
+  animation-name: fadeAndScaleOut;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-scale.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: fadeAndScaleIn;
+  animation-name: fadeAndScaleIn;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-scale.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-scale.ng-leave {
+  -webkit-animation-name: fadeAndScaleOut;
+  animation-name: fadeAndScaleOut;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-scale.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes fadeAndScaleIn {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeAndScaleIn {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeAndScaleOut {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+}
+
+@keyframes fadeAndScaleOut {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-top {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-top.am-fade-and-slide-top-add, .am-fade-and-slide-top.ng-hide-remove, .am-fade-and-slide-top.ng-move {
+  -webkit-animation-name: fadeAndSlideFromTop;
+  animation-name: fadeAndSlideFromTop;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-top.am-fade-and-slide-top-remove, .am-fade-and-slide-top.ng-hide {
+  -webkit-animation-name: fadeAndSlideToTop;
+  animation-name: fadeAndSlideToTop;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-top.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: fadeAndSlideFromTop;
+  animation-name: fadeAndSlideFromTop;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-top.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-top.ng-leave {
+  -webkit-animation-name: fadeAndSlideToTop;
+  animation-name: fadeAndSlideToTop;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-top.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-right {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-right.am-fade-and-slide-right-add, .am-fade-and-slide-right.ng-hide-remove, .am-fade-and-slide-right.ng-move {
+  -webkit-animation-name: fadeAndSlideFromRight;
+  animation-name: fadeAndSlideFromRight;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-right.am-fade-and-slide-right-remove, .am-fade-and-slide-right.ng-hide {
+  -webkit-animation-name: fadeAndSlideToRight;
+  animation-name: fadeAndSlideToRight;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-right.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: fadeAndSlideFromRight;
+  animation-name: fadeAndSlideFromRight;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-right.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-right.ng-leave {
+  -webkit-animation-name: fadeAndSlideToRight;
+  animation-name: fadeAndSlideToRight;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-right.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-bottom {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-bottom.am-fade-and-slide-bottom-add, .am-fade-and-slide-bottom.ng-hide-remove, .am-fade-and-slide-bottom.ng-move {
+  -webkit-animation-name: fadeAndSlideFromBottom;
+  animation-name: fadeAndSlideFromBottom;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-bottom.am-fade-and-slide-bottom-remove, .am-fade-and-slide-bottom.ng-hide {
+  -webkit-animation-name: fadeAndSlideToBottom;
+  animation-name: fadeAndSlideToBottom;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-bottom.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: fadeAndSlideFromBottom;
+  animation-name: fadeAndSlideFromBottom;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-bottom.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-bottom.ng-leave {
+  -webkit-animation-name: fadeAndSlideToBottom;
+  animation-name: fadeAndSlideToBottom;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-bottom.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-left {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-left.am-fade-and-slide-left-add, .am-fade-and-slide-left.ng-hide-remove, .am-fade-and-slide-left.ng-move {
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-animation-name: fadeAndSlideFromLeft;
+  animation-name: fadeAndSlideFromLeft;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-left.am-fade-and-slide-left-remove, .am-fade-and-slide-left.ng-hide {
+  -webkit-animation-name: fadeAndSlideToLeft;
+  animation-name: fadeAndSlideToLeft;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-left.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: fadeAndSlideFromLeft;
+  animation-name: fadeAndSlideFromLeft;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-left.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-left.ng-leave {
+  -webkit-animation-name: fadeAndSlideToLeft;
+  animation-name: fadeAndSlideToLeft;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade-and-slide-left.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes fadeAndSlideFromTop {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeAndSlideFromTop {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeAndSlideToTop {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes fadeAndSlideToTop {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+}
+
+@-webkit-keyframes fadeAndSlideFromRight {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(20%);
+    transform: translateX(20%);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeAndSlideFromRight {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(20%);
+    transform: translateX(20%);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeAndSlideToRight {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(20%);
+    transform: translateX(20%);
+  }
+}
+
+@keyframes fadeAndSlideToRight {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(20%);
+    transform: translateX(20%);
+  }
+}
+
+@-webkit-keyframes fadeAndSlideFromBottom {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeAndSlideFromBottom {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeAndSlideToBottom {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+}
+
+@keyframes fadeAndSlideToBottom {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+  }
+}
+
+@-webkit-keyframes fadeAndSlideFromLeft {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeAndSlideFromLeft {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeAndSlideToLeft {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes fadeAndSlideToLeft {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+  }
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  opacity: 1;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade.am-fade-add, .am-fade.ng-hide-remove, .am-fade.ng-move {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade.am-fade-remove, .am-fade.ng-hide {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade.ng-leave {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-fade.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.modal-backdrop.am-fade, .aside-backdrop.am-fade {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-animation-duration: .15s;
+  animation-duration: .15s;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.modal-backdrop.am-fade.ng-leave, .aside-backdrop.am-fade.ng-leave {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x {
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x.am-flip-x-add, .am-flip-x.ng-hide-remove, .am-flip-x.ng-move {
+  -webkit-animation-name: flipInXBounce;
+  animation-name: flipInXBounce;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x.am-flip-x-remove, .am-flip-x.ng-hide {
+  -webkit-animation-name: flipOutX;
+  animation-name: flipOutX;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: flipInXBounce;
+  animation-name: flipInXBounce;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x.ng-leave {
+  -webkit-animation-name: flipOutX;
+  animation-name: flipOutX;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x-linear {
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x-linear.am-flip-x-add, .am-flip-x-linear.ng-hide-remove, .am-flip-x-linear.ng-move {
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x-linear.am-flip-x-remove, .am-flip-x-linear.ng-hide {
+  -webkit-animation-name: flipOutX;
+  animation-name: flipOutX;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x-linear.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x-linear.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x-linear.ng-leave {
+  -webkit-animation-name: flipOutX;
+  animation-name: flipOutX;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-flip-x-linear.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes flipInX {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@keyframes flipInX {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes flipInXBounce {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@keyframes flipInXBounce {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes flipOutX {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+}
+
+@keyframes flipOutX {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    opacity: 1;
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
+
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-top {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-top.am-slide-top-add, .am-slide-top.ng-hide-remove, .am-slide-top.ng-move {
+  -webkit-animation-name: slideFromTop;
+  animation-name: slideFromTop;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-top.am-slide-top-remove, .am-slide-top.ng-hide {
+  -webkit-animation-name: slideToTop;
+  animation-name: slideToTop;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-top.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: slideFromTop;
+  animation-name: slideFromTop;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-top.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-top.ng-leave {
+  -webkit-animation-name: slideToTop;
+  animation-name: slideToTop;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-top.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-right {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-right.am-slide-right-add, .am-slide-right.ng-hide-remove, .am-slide-right.ng-move {
+  -webkit-animation-name: slideFromRight;
+  animation-name: slideFromRight;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-right.am-slide-right-remove, .am-slide-right.ng-hide {
+  -webkit-animation-name: slideToRight;
+  animation-name: slideToRight;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-right.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: slideFromRight;
+  animation-name: slideFromRight;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-right.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-right.ng-leave {
+  -webkit-animation-name: slideToRight;
+  animation-name: slideToRight;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-right.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-bottom {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-bottom.am-slide-bottom-add, .am-slide-bottom.ng-hide-remove, .am-slide-bottom.ng-move {
+  -webkit-animation-name: slideFromBottom;
+  animation-name: slideFromBottom;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-bottom.am-slide-bottom-remove, .am-slide-bottom.ng-hide {
+  -webkit-animation-name: slideToBottom;
+  animation-name: slideToBottom;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-bottom.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: slideFromBottom;
+  animation-name: slideFromBottom;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-bottom.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-bottom.ng-leave {
+  -webkit-animation-name: slideToBottom;
+  animation-name: slideToBottom;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-bottom.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-left {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-left.am-slide-left-add, .am-slide-left.ng-hide-remove, .am-slide-left.ng-move {
+  -webkit-animation-name: slideFromLeft;
+  animation-name: slideFromLeft;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-left.am-slide-left-remove, .am-slide-left.ng-hide {
+  -webkit-animation-name: slideToLeft;
+  animation-name: slideToLeft;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-left.ng-enter {
+  visibility: hidden;
+  -webkit-animation-name: slideFromLeft;
+  animation-name: slideFromLeft;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-left.ng-enter.ng-enter-active {
+  visibility: visible;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-left.ng-leave {
+  -webkit-animation-name: slideToLeft;
+  animation-name: slideToLeft;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+.am-slide-left.ng-leave.ng-leave-active {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@-webkit-keyframes slideFromTop {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideFromTop {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes slideToTop {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideToTop {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes slideFromRight {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideFromRight {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes slideToRight {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideToRight {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes slideFromBottom {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slideFromBottom {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes slideToBottom {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slideToBottom {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes slideFromLeft {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideFromLeft {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes slideToLeft {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideToLeft {
+  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+/*
+ * Toastr
+ * Version 2.0.1
+ * Copyright 2012 John Papa and Hans Fjällemark.  
+ * All Rights Reserved.  
+ * Use, reproduction, distribution, and modification of this code is subject to the terms and 
+ * conditions of the MIT license, available at http://www.opensource.org/licenses/mit-license.php
+ *
+ * Author: John Papa and Hans Fjällemark
+ * Project: https://github.com/CodeSeven/toastr
+ */
+/* line 12, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-title {
+  font-weight: bold;
+}
+
+/* line 15, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-message {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* line 20, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-message a,
+.toast-message label {
+  color: #ffffff;
+}
+
+/* line 23, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-message a:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+/* line 28, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-close-button {
+  position: relative;
+  right: -0.3em;
+  top: -0.3em;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-text-shadow: 0 1px 0 white;
+  text-shadow: 0 1px 0 white;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80);
+}
+
+/* line 43, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-close-button:hover,
+.toast-close-button:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: alpha(opacity=40);
+}
+
+/*Additional properties for button version
+ iOS requires the button element instead of an anchor tag.
+ If you want the anchor version, it requires `href="#"`.*/
+/* line 55, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+button.toast-close-button {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+/* line 62, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-top-full-width {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* line 67, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-bottom-full-width {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* line 72, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-top-left {
+  top: 12px;
+  left: 12px;
+}
+
+/* line 76, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-top-right {
+  top: 12px;
+  right: 12px;
+}
+
+/* line 80, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-bottom-right {
+  right: 12px;
+  bottom: 12px;
+}
+
+/* line 84, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-bottom-left {
+  bottom: 12px;
+  left: 12px;
+}
+
+/* line 88, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container {
+  position: fixed;
+  z-index: 999999;
+  /*overrides*/
+}
+
+/* line 94, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 99, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container > div {
+  margin: 0 0 6px;
+  padding: 15px 15px 15px 50px;
+  width: 300px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  -moz-box-shadow: 0 0 12px #999999;
+  -webkit-box-shadow: 0 0 12px #999999;
+  box-shadow: 0 0 12px #999999;
+  color: #ffffff;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80);
+}
+
+/* line 116, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container > :hover {
+  -moz-box-shadow: 0 0 12px black;
+  -webkit-box-shadow: 0 0 12px black;
+  box-shadow: 0 0 12px black;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
+  cursor: pointer;
+}
+
+/* line 125, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container > .toast-info {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=") !important;
+}
+
+/* line 128, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container > .toast-wait {
+  background-image: url("data:image/gif;base64,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") !important;
+}
+
+/* line 131, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container > .toast-error {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=") !important;
+}
+
+/* line 134, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container > .toast-success {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==") !important;
+}
+
+/* line 137, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container > .toast-warning {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=") !important;
+}
+
+/* line 141, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container.toast-top-full-width > div,
+#toast-container.toast-bottom-full-width > div {
+  width: 96%;
+  margin: auto;
+}
+
+/* line 145, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast {
+  background-color: #030303;
+}
+
+/* line 148, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-success {
+  background-color: #51a351;
+}
+
+/* line 151, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-error {
+  background-color: #bd362f;
+}
+
+/* line 154, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-info {
+  background-color: #2f96b4;
+}
+
+/* line 157, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-wait {
+  background-color: #2f96b4;
+}
+
+/* line 160, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+.toast-warning {
+  background-color: #f89406;
+}
+
+/*Responsive Design*/
+@media all and (max-width: 240px) {
+  /* line 165, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+  #toast-container > div {
+    padding: 8px 8px 8px 50px;
+    width: 11em;
+  }
+
+  /* line 169, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+  #toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em;
+  }
+}
+@media all and (min-width: 241px) and (max-width: 480px) {
+  /* line 175, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+  #toast-container > div {
+    padding: 8px 8px 8px 50px;
+    width: 18em;
+  }
+
+  /* line 179, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+  #toast-container .toast-close-button {
+    right: -0.2em;
+    top: -0.2em;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  /* line 185, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+  #toast-container > div {
+    padding: 15px 15px 15px 50px;
+    width: 25em;
+  }
+}
+/*
+ * AngularJS-Toaster
+ * Version 0.3
+*/
+/* line 197, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container > div.ng-enter,
+#toast-container > div.ng-leave {
+  -webkit-transition: 1000ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -moz-transition: 1000ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -ms-transition: 1000ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -o-transition: 1000ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  transition: 1000ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+}
+
+/* line 206, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container > div.ng-enter.ng-enter-active,
+#toast-container > div.ng-leave {
+  opacity: 0.8;
+}
+
+/* line 211, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
+#toast-container > div.ng-leave.ng-leave-active,
+#toast-container > div.ng-enter {
+  opacity: 0;
+}
+
+/* line 1, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+body {
+  background: #ccc;
+}
+
+/* line 4, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+input[type=range] {
+  width: 300px;
+}
+
+/* line 7, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+ul[rn-carousel] {
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  position: relative;
+  -webkit-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* line 17, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+ul[rn-carousel] li {
+  color: black;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: visible;
+  vertical-align: top;
+  position: absolute;
+  left: 0;
+  right: 0;
+  white-space: normal;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+/* prevent flickering when moving buffer */
+/* line 36, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+ul[rn-carousel-buffered] li {
+  display: none;
+}
+
+/* line 39, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+ul[rn-carousel-transition="hexagon"] {
+  overflow: visible;
+}
+
+/* indicators */
+/* line 43, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+div.rn-carousel-indicator span {
+  cursor: pointer;
+  color: #666;
+}
+
+/* line 46, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+div.rn-carousel-indicator span.active {
+  color: white;
+}
+
+/* prev/next controls */
+/* line 50, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+.rn-carousel-control {
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  font-size: 2rem;
+  position: absolute;
+  top: 40%;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+/* line 58, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+.rn-carousel-control:hover {
+  opacity: 1;
+}
+
+/* line 60, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+.rn-carousel-control.rn-carousel-control-prev {
+  left: 0.5em;
+}
+
+/* line 62, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+.rn-carousel-control.rn-carousel-control-prev:before {
+  content: "<";
+}
+
+/* line 64, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+.rn-carousel-control.rn-carousel-control-next {
+  right: 0.5em;
+}
+
+/* line 66, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/angular-carousel/dist/_angular-carousel.scss */
+.rn-carousel-control.rn-carousel-control-next:before {
+  content: ">";
+}
+
 /* normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/bootstap_3_2_0/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -10726,1506 +12329,6 @@ button.close {
   content: "\f20c";
 }
 
-/**
- * angular-motion
- * @version v0.3.3 - 2014-06-23
- * @link https://github.com/mgcrea/angular-motion
- * @author Olivier Louvignes <olivier@mg-crea.com>
- * @license MIT License, http://www.opensource.org/licenses/MIT
- */
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-scale {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-scale.ng-enter, .am-fade-and-scale.am-fade-and-scale-add, .am-fade-and-scale.ng-hide-remove, .am-fade-and-scale.ng-move {
-  -webkit-animation-name: fadeAndScaleIn;
-  animation-name: fadeAndScaleIn;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-scale.ng-leave, .am-fade-and-scale.am-fade-and-scale-remove, .am-fade-and-scale.ng-hide {
-  -webkit-animation-name: fadeAndScaleOut;
-  animation-name: fadeAndScaleOut;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-scale.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: fadeAndScaleIn;
-  animation-name: fadeAndScaleIn;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-scale.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-scale.ng-leave {
-  -webkit-animation-name: fadeAndScaleOut;
-  animation-name: fadeAndScaleOut;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-scale.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-@-webkit-keyframes fadeAndScaleIn {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeAndScaleIn {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeAndScaleOut {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
-  }
-}
-
-@keyframes fadeAndScaleOut {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
-  }
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-top {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-top.am-fade-and-slide-top-add, .am-fade-and-slide-top.ng-hide-remove, .am-fade-and-slide-top.ng-move {
-  -webkit-animation-name: fadeAndSlideFromTop;
-  animation-name: fadeAndSlideFromTop;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-top.am-fade-and-slide-top-remove, .am-fade-and-slide-top.ng-hide {
-  -webkit-animation-name: fadeAndSlideToTop;
-  animation-name: fadeAndSlideToTop;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-top.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: fadeAndSlideFromTop;
-  animation-name: fadeAndSlideFromTop;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-top.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-top.ng-leave {
-  -webkit-animation-name: fadeAndSlideToTop;
-  animation-name: fadeAndSlideToTop;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-top.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-right {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-right.am-fade-and-slide-right-add, .am-fade-and-slide-right.ng-hide-remove, .am-fade-and-slide-right.ng-move {
-  -webkit-animation-name: fadeAndSlideFromRight;
-  animation-name: fadeAndSlideFromRight;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-right.am-fade-and-slide-right-remove, .am-fade-and-slide-right.ng-hide {
-  -webkit-animation-name: fadeAndSlideToRight;
-  animation-name: fadeAndSlideToRight;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-right.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: fadeAndSlideFromRight;
-  animation-name: fadeAndSlideFromRight;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-right.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-right.ng-leave {
-  -webkit-animation-name: fadeAndSlideToRight;
-  animation-name: fadeAndSlideToRight;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-right.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-bottom {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-bottom.am-fade-and-slide-bottom-add, .am-fade-and-slide-bottom.ng-hide-remove, .am-fade-and-slide-bottom.ng-move {
-  -webkit-animation-name: fadeAndSlideFromBottom;
-  animation-name: fadeAndSlideFromBottom;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-bottom.am-fade-and-slide-bottom-remove, .am-fade-and-slide-bottom.ng-hide {
-  -webkit-animation-name: fadeAndSlideToBottom;
-  animation-name: fadeAndSlideToBottom;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-bottom.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: fadeAndSlideFromBottom;
-  animation-name: fadeAndSlideFromBottom;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-bottom.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-bottom.ng-leave {
-  -webkit-animation-name: fadeAndSlideToBottom;
-  animation-name: fadeAndSlideToBottom;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-bottom.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-left {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-left.am-fade-and-slide-left-add, .am-fade-and-slide-left.ng-hide-remove, .am-fade-and-slide-left.ng-move {
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-  -webkit-animation-name: fadeAndSlideFromLeft;
-  animation-name: fadeAndSlideFromLeft;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-left.am-fade-and-slide-left-remove, .am-fade-and-slide-left.ng-hide {
-  -webkit-animation-name: fadeAndSlideToLeft;
-  animation-name: fadeAndSlideToLeft;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-left.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: fadeAndSlideFromLeft;
-  animation-name: fadeAndSlideFromLeft;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-left.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-left.ng-leave {
-  -webkit-animation-name: fadeAndSlideToLeft;
-  animation-name: fadeAndSlideToLeft;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade-and-slide-left.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-@-webkit-keyframes fadeAndSlideFromTop {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeAndSlideFromTop {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeAndSlideToTop {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
-  }
-}
-
-@keyframes fadeAndSlideToTop {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
-  }
-}
-
-@-webkit-keyframes fadeAndSlideFromRight {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(20%);
-    transform: translateX(20%);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeAndSlideFromRight {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(20%);
-    transform: translateX(20%);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeAndSlideToRight {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: translateX(20%);
-    transform: translateX(20%);
-  }
-}
-
-@keyframes fadeAndSlideToRight {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: translateX(20%);
-    transform: translateX(20%);
-  }
-}
-
-@-webkit-keyframes fadeAndSlideFromBottom {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-    transform: translateY(20%);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeAndSlideFromBottom {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-    transform: translateY(20%);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeAndSlideToBottom {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-    transform: translateY(20%);
-  }
-}
-
-@keyframes fadeAndSlideToBottom {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-    transform: translateY(20%);
-  }
-}
-
-@-webkit-keyframes fadeAndSlideFromLeft {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(-20%);
-    transform: translateX(-20%);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeAndSlideFromLeft {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(-20%);
-    transform: translateX(-20%);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeAndSlideToLeft {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: translateX(-20%);
-    transform: translateX(-20%);
-  }
-}
-
-@keyframes fadeAndSlideToLeft {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: translateX(-20%);
-    transform: translateX(-20%);
-  }
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-  opacity: 1;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade.am-fade-add, .am-fade.ng-hide-remove, .am-fade.ng-move {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade.am-fade-remove, .am-fade.ng-hide {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade.ng-leave {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-fade.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-@-webkit-keyframes fadeIn {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-  }
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.modal-backdrop.am-fade, .aside-backdrop.am-fade {
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-animation-duration: .15s;
-  animation-duration: .15s;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.modal-backdrop.am-fade.ng-leave, .aside-backdrop.am-fade.ng-leave {
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x {
-  -webkit-animation-duration: .4s;
-  animation-duration: .4s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x.am-flip-x-add, .am-flip-x.ng-hide-remove, .am-flip-x.ng-move {
-  -webkit-animation-name: flipInXBounce;
-  animation-name: flipInXBounce;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x.am-flip-x-remove, .am-flip-x.ng-hide {
-  -webkit-animation-name: flipOutX;
-  animation-name: flipOutX;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: flipInXBounce;
-  animation-name: flipInXBounce;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x.ng-leave {
-  -webkit-animation-name: flipOutX;
-  animation-name: flipOutX;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x-linear {
-  -webkit-animation-duration: .4s;
-  animation-duration: .4s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x-linear.am-flip-x-add, .am-flip-x-linear.ng-hide-remove, .am-flip-x-linear.ng-move {
-  -webkit-animation-name: flipInX;
-  animation-name: flipInX;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x-linear.am-flip-x-remove, .am-flip-x-linear.ng-hide {
-  -webkit-animation-name: flipOutX;
-  animation-name: flipOutX;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x-linear.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: flipInX;
-  animation-name: flipInX;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x-linear.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x-linear.ng-leave {
-  -webkit-animation-name: flipOutX;
-  animation-name: flipOutX;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-flip-x-linear.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-@-webkit-keyframes flipInX {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: perspective(400px) rotateX(90deg);
-    transform: perspective(400px) rotateX(90deg);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-    -webkit-transform: perspective(400px) rotateX(0deg);
-    transform: perspective(400px) rotateX(0deg);
-  }
-}
-
-@keyframes flipInX {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: perspective(400px) rotateX(90deg);
-    transform: perspective(400px) rotateX(90deg);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-    -webkit-transform: perspective(400px) rotateX(0deg);
-    transform: perspective(400px) rotateX(0deg);
-  }
-}
-
-@-webkit-keyframes flipInXBounce {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: perspective(400px) rotateX(90deg);
-    transform: perspective(400px) rotateX(90deg);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  40% {
-    -webkit-transform: perspective(400px) rotateX(-10deg);
-    transform: perspective(400px) rotateX(-10deg);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  70% {
-    -webkit-transform: perspective(400px) rotateX(10deg);
-    transform: perspective(400px) rotateX(10deg);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-    -webkit-transform: perspective(400px) rotateX(0deg);
-    transform: perspective(400px) rotateX(0deg);
-  }
-}
-
-@keyframes flipInXBounce {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 0;
-    -webkit-transform: perspective(400px) rotateX(90deg);
-    transform: perspective(400px) rotateX(90deg);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  40% {
-    -webkit-transform: perspective(400px) rotateX(-10deg);
-    transform: perspective(400px) rotateX(-10deg);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  70% {
-    -webkit-transform: perspective(400px) rotateX(10deg);
-    transform: perspective(400px) rotateX(10deg);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 1;
-    -webkit-transform: perspective(400px) rotateX(0deg);
-    transform: perspective(400px) rotateX(0deg);
-  }
-}
-
-@-webkit-keyframes flipOutX {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-    -webkit-transform: perspective(400px) rotateX(0deg);
-    transform: perspective(400px) rotateX(0deg);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: perspective(400px) rotateX(90deg);
-    transform: perspective(400px) rotateX(90deg);
-  }
-}
-
-@keyframes flipOutX {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    opacity: 1;
-    -webkit-transform: perspective(400px) rotateX(0deg);
-    transform: perspective(400px) rotateX(0deg);
-  }
-
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    opacity: 0;
-    -webkit-transform: perspective(400px) rotateX(90deg);
-    transform: perspective(400px) rotateX(90deg);
-  }
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-top {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-top.am-slide-top-add, .am-slide-top.ng-hide-remove, .am-slide-top.ng-move {
-  -webkit-animation-name: slideFromTop;
-  animation-name: slideFromTop;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-top.am-slide-top-remove, .am-slide-top.ng-hide {
-  -webkit-animation-name: slideToTop;
-  animation-name: slideToTop;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-top.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: slideFromTop;
-  animation-name: slideFromTop;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-top.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-top.ng-leave {
-  -webkit-animation-name: slideToTop;
-  animation-name: slideToTop;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-top.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-right {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-right.am-slide-right-add, .am-slide-right.ng-hide-remove, .am-slide-right.ng-move {
-  -webkit-animation-name: slideFromRight;
-  animation-name: slideFromRight;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-right.am-slide-right-remove, .am-slide-right.ng-hide {
-  -webkit-animation-name: slideToRight;
-  animation-name: slideToRight;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-right.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: slideFromRight;
-  animation-name: slideFromRight;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-right.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-right.ng-leave {
-  -webkit-animation-name: slideToRight;
-  animation-name: slideToRight;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-right.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-bottom {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-bottom.am-slide-bottom-add, .am-slide-bottom.ng-hide-remove, .am-slide-bottom.ng-move {
-  -webkit-animation-name: slideFromBottom;
-  animation-name: slideFromBottom;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-bottom.am-slide-bottom-remove, .am-slide-bottom.ng-hide {
-  -webkit-animation-name: slideToBottom;
-  animation-name: slideToBottom;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-bottom.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: slideFromBottom;
-  animation-name: slideFromBottom;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-bottom.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-bottom.ng-leave {
-  -webkit-animation-name: slideToBottom;
-  animation-name: slideToBottom;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-bottom.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-left {
-  -webkit-animation-duration: .3s;
-  animation-duration: .3s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: backwards;
-  animation-fill-mode: backwards;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-left.am-slide-left-add, .am-slide-left.ng-hide-remove, .am-slide-left.ng-move {
-  -webkit-animation-name: slideFromLeft;
-  animation-name: slideFromLeft;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-left.am-slide-left-remove, .am-slide-left.ng-hide {
-  -webkit-animation-name: slideToLeft;
-  animation-name: slideToLeft;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-left.ng-enter {
-  visibility: hidden;
-  -webkit-animation-name: slideFromLeft;
-  animation-name: slideFromLeft;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-left.ng-enter.ng-enter-active {
-  visibility: visible;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-left.ng-leave {
-  -webkit-animation-name: slideToLeft;
-  animation-name: slideToLeft;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-/* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-.am-slide-left.ng-leave.ng-leave-active {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-@-webkit-keyframes slideFromTop {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-}
-
-@keyframes slideFromTop {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-}
-
-@-webkit-keyframes slideToTop {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-}
-
-@keyframes slideToTop {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-}
-
-@-webkit-keyframes slideFromRight {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-}
-
-@keyframes slideFromRight {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-}
-
-@-webkit-keyframes slideToRight {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-}
-
-@keyframes slideToRight {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-}
-
-@-webkit-keyframes slideFromBottom {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-  }
-}
-
-@keyframes slideFromBottom {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-  }
-}
-
-@-webkit-keyframes slideToBottom {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-  }
-}
-
-@keyframes slideToBottom {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-  }
-}
-
-@-webkit-keyframes slideFromLeft {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slideFromLeft {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  from {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
-@-webkit-keyframes slideToLeft {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slideToLeft {
-  /* line 8, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/angular-motion-0.3.3/dist/angular-motion.min.scss */
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-}
-
-/*
- * Toastr
- * Version 2.0.1
- * Copyright 2012 John Papa and Hans Fjällemark.  
- * All Rights Reserved.  
- * Use, reproduction, distribution, and modification of this code is subject to the terms and 
- * conditions of the MIT license, available at http://www.opensource.org/licenses/mit-license.php
- *
- * Author: John Papa and Hans Fjällemark
- * Project: https://github.com/CodeSeven/toastr
- */
-/* line 12, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-title {
-  font-weight: bold;
-}
-
-/* line 15, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-message {
-  -ms-word-wrap: break-word;
-  word-wrap: break-word;
-}
-
-/* line 20, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-message a,
-.toast-message label {
-  color: #ffffff;
-}
-
-/* line 23, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-message a:hover {
-  color: #cccccc;
-  text-decoration: none;
-}
-
-/* line 28, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-close-button {
-  position: relative;
-  right: -0.3em;
-  top: -0.3em;
-  float: right;
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
-  -webkit-text-shadow: 0 1px 0 white;
-  text-shadow: 0 1px 0 white;
-  opacity: 0.8;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  filter: alpha(opacity=80);
-}
-
-/* line 43, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-close-button:hover,
-.toast-close-button:focus {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.4;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-  filter: alpha(opacity=40);
-}
-
-/*Additional properties for button version
- iOS requires the button element instead of an anchor tag.
- If you want the anchor version, it requires `href="#"`.*/
-/* line 55, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-button.toast-close-button {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-}
-
-/* line 62, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-top-full-width {
-  top: 0;
-  right: 0;
-  width: 100%;
-}
-
-/* line 67, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-bottom-full-width {
-  bottom: 0;
-  right: 0;
-  width: 100%;
-}
-
-/* line 72, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-top-left {
-  top: 12px;
-  left: 12px;
-}
-
-/* line 76, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-top-right {
-  top: 12px;
-  right: 12px;
-}
-
-/* line 80, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-bottom-right {
-  right: 12px;
-  bottom: 12px;
-}
-
-/* line 84, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-bottom-left {
-  bottom: 12px;
-  left: 12px;
-}
-
-/* line 88, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container {
-  position: fixed;
-  z-index: 999999;
-  /*overrides*/
-}
-
-/* line 94, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 99, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container > div {
-  margin: 0 0 6px;
-  padding: 15px 15px 15px 50px;
-  width: 300px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
-  border-radius: 3px 3px 3px 3px;
-  background-position: 15px center;
-  background-repeat: no-repeat;
-  -moz-box-shadow: 0 0 12px #999999;
-  -webkit-box-shadow: 0 0 12px #999999;
-  box-shadow: 0 0 12px #999999;
-  color: #ffffff;
-  opacity: 0.8;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  filter: alpha(opacity=80);
-}
-
-/* line 116, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container > :hover {
-  -moz-box-shadow: 0 0 12px black;
-  -webkit-box-shadow: 0 0 12px black;
-  box-shadow: 0 0 12px black;
-  opacity: 1;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  filter: alpha(opacity=100);
-  cursor: pointer;
-}
-
-/* line 125, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container > .toast-info {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=") !important;
-}
-
-/* line 128, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container > .toast-wait {
-  background-image: url("data:image/gif;base64,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") !important;
-}
-
-/* line 131, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container > .toast-error {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVEhLrZa/SgNBEMZzh0WKCClSCKaIYOED+AAKeQQLG8HWztLCImBrYadgIdY+gIKNYkBFSwu7CAoqCgkkoGBI/E28PdbLZmeDLgzZzcx83/zZ2SSXC1j9fr+I1Hq93g2yxH4iwM1vkoBWAdxCmpzTxfkN2RcyZNaHFIkSo10+8kgxkXIURV5HGxTmFuc75B2RfQkpxHG8aAgaAFa0tAHqYFfQ7Iwe2yhODk8+J4C7yAoRTWI3w/4klGRgR4lO7Rpn9+gvMyWp+uxFh8+H+ARlgN1nJuJuQAYvNkEnwGFck18Er4q3egEc/oO+mhLdKgRyhdNFiacC0rlOCbhNVz4H9FnAYgDBvU3QIioZlJFLJtsoHYRDfiZoUyIxqCtRpVlANq0EU4dApjrtgezPFad5S19Wgjkc0hNVnuF4HjVA6C7QrSIbylB+oZe3aHgBsqlNqKYH48jXyJKMuAbiyVJ8KzaB3eRc0pg9VwQ4niFryI68qiOi3AbjwdsfnAtk0bCjTLJKr6mrD9g8iq/S/B81hguOMlQTnVyG40wAcjnmgsCNESDrjme7wfftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=") !important;
-}
-
-/* line 134, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container > .toast-success {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==") !important;
-}
-
-/* line 137, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container > .toast-warning {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=") !important;
-}
-
-/* line 141, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container.toast-top-full-width > div,
-#toast-container.toast-bottom-full-width > div {
-  width: 96%;
-  margin: auto;
-}
-
-/* line 145, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast {
-  background-color: #030303;
-}
-
-/* line 148, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-success {
-  background-color: #51a351;
-}
-
-/* line 151, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-error {
-  background-color: #bd362f;
-}
-
-/* line 154, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-info {
-  background-color: #2f96b4;
-}
-
-/* line 157, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-wait {
-  background-color: #2f96b4;
-}
-
-/* line 160, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-.toast-warning {
-  background-color: #f89406;
-}
-
-/*Responsive Design*/
-@media all and (max-width: 240px) {
-  /* line 165, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-  #toast-container > div {
-    padding: 8px 8px 8px 50px;
-    width: 11em;
-  }
-
-  /* line 169, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-  #toast-container .toast-close-button {
-    right: -0.2em;
-    top: -0.2em;
-  }
-}
-@media all and (min-width: 241px) and (max-width: 480px) {
-  /* line 175, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-  #toast-container > div {
-    padding: 8px 8px 8px 50px;
-    width: 18em;
-  }
-
-  /* line 179, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-  #toast-container .toast-close-button {
-    right: -0.2em;
-    top: -0.2em;
-  }
-}
-@media all and (min-width: 481px) and (max-width: 768px) {
-  /* line 185, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-  #toast-container > div {
-    padding: 15px 15px 15px 50px;
-    width: 25em;
-  }
-}
-/*
- * AngularJS-Toaster
- * Version 0.3
-*/
-/* line 197, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container > div.ng-enter,
-#toast-container > div.ng-leave {
-  -webkit-transition: 1000ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-  -moz-transition: 1000ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-  -ms-transition: 1000ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-  -o-transition: 1000ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-  transition: 1000ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
-}
-
-/* line 206, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container > div.ng-enter.ng-enter-active,
-#toast-container > div.ng-leave {
-  opacity: 0.8;
-}
-
-/* line 211, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/../../js/thirdparty/AngularJS-Toaster/_toaster.scss */
-#toast-container > div.ng-leave.ng-leave-active,
-#toast-container > div.ng-enter {
-  opacity: 0;
-}
-
 /** Widgets **/
 /*font-family: 'Lobster', cursive;*/
 /* line 1, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/_general.scss */
@@ -12246,8 +12349,9 @@ body .container-fluid {
   bottom: 0;
   opacity: 0.5;
   background: #000000;
+  z-index: 10000;
 }
-/* line 9, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/_shadow-container.scss */
+/* line 10, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/_shadow-container.scss */
 .shadow-container .loader-spinner {
   opacity: 1;
   top: 50%;
@@ -12256,7 +12360,7 @@ body .container-fluid {
   height: 72px;
   margin: 0 auto;
   background: url("../../images/spinner.gif") no-repeat center center;
-  background-size: 50% 50%;
+  background-size: 80% 80%;
 }
 
 /* line 2, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/top-menu/_top-menu.scss */
@@ -12281,4 +12385,48 @@ body .container-fluid {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* line 2, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+.photo-slider .bgimage {
+  text-align: right;
+  color: white;
+  background-size: cover;
+  height: 100%;
+}
+/* line 9, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+.photo-slider ul[rn-carousel] {
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+}
+/* line 15, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+.photo-slider .carousel5 li {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  background-color: #ccc;
+}
+/* line 22, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+.photo-slider div.carousel-demo {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 28, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+.photo-slider input.tiny {
+  width: 50px;
+  text-align: center;
+}
+/* line 34, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+.photo-slider ul[rn-carousel-transition="hexagon"] {
+  margin-left: 100px;
+}
+/* line 38, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+.photo-slider .custom-indicator span {
+  transition: all 0.3s ease-in;
+}
+/* line 41, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+.photo-slider .custom-indicator span.active {
+  color: yellow !important;
 }

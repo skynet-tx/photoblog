@@ -6,6 +6,7 @@
   bottom: 0;
   opacity: 0.5;
   background: #000000;
+  z-index: 10000;
   .loader-spinner {
 	opacity: 1;
 	top: 50%;
@@ -14,6 +15,6 @@
 	height: 72px;
 	margin: 0 auto;
 	background: url("#{$image-url}/spinner.gif") no-repeat center center;
-	background-size: 50% 50%;
+	background-size: 80% 80%;
   }
 }

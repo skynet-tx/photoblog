@@ -1,7 +1,7 @@
 /**
  * Created by as on 10/4/2014.
  */
-(function () {
+(function (angular) {
     "use strict";
 
     angular
@@ -10,7 +10,8 @@
             'ngResource',
             'ngAnimate',
             "mgcrea.ngStrap",
-			"toaster"
+			"toaster",
+			'angular-carousel'
         ]);
 
 })(angular);

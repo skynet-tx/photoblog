@@ -17,7 +17,7 @@
 			shadowContainer = angular.element("<div class='" + shadowClass + "'><div class='loader-spinner'></div></div>"),
 			service = {
 				start: start,
-				cansel: cansel,
+				cansel: cancel,
 				isStarted: isStarted
 			};
 
@@ -25,15 +25,16 @@
 		//////////////////
 
 		function start() {
+			if(isStarted()) return;
 			body.append(shadowContainer);
 		}
 
-		function cansel() {
+		function cancel() {
 			angular.element("." + shadowClass).remove();
 		}
 
 		function isStarted() {
-
+			return (angular.element("." + shadowClass).length) > 0 ? true : false;
 		}
 	}
 })(angular);
