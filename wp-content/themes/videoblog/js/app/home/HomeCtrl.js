@@ -51,8 +51,15 @@
 					odd: (key % 2 === 0)
 				});
 			}, vm.collectedImages);
-			console.log(vm.collectedImages);
 		}
+
+		getServices.getPostsCategories().then(function (response) {
+			if (response.statusText === "OK") {
+				$log.debug("Server send Posts Categories:", response.data);
+			} else {
+				console.log(response);
+			}
+		});
 
 
     }

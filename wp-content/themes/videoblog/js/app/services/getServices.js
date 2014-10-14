@@ -21,7 +21,9 @@
 			urls = {
 				getPages: "wp-json/pages",
 				APIEndpoint: "wp-json",
-				getSliderImages: "wp-json/media"
+				getSliderImages: "wp-json/media",
+				getPosts: "wp-json/posts",
+				getTaxonomies: "wp-json/taxonomies"
 			};
 
 		$bgShadow.start();
@@ -29,7 +31,9 @@
 		return {
 			getPages: getPages,
 			getAPIEndpoint: getAPIEndpoint,
-			getSliderImages: getSliderImages
+			getSliderImages: getSliderImages,
+			getTaxonomies: getTaxonomies,
+			getPostsCategories: getPostsCategories
 		};
 
 		function getPages() {
@@ -46,6 +50,14 @@
 				"filter[order]": "DESC"
 			};
 			return _get(urls.getSliderImages, params);
+		}
+
+		function getPostsCategories(){
+			return _get(urls.getPosts + "/types/posts/taxonomies/category/terms");
+		}
+
+		function getTaxonomies(params){
+			return _get(urls.getTaxonomies, params);
 		}
 
 		function _get(url, params) {
