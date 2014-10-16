@@ -12396,13 +12396,11 @@ body .container-fluid {
 }
 /* line 6, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
 .photo-slider ul[rn-carousel] {
-  max-width: 801px;
-  max-height: 569px;
-  min-width: 220px;
-  min-height: 200px;
+  width: 801px;
+  height: 569px;
   margin: 0 auto;
 }
-/* line 14, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+/* line 12, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
 .photo-slider ul[rn-carousel] li .bgimage {
   text-align: right;
   color: white;
@@ -12410,13 +12408,13 @@ body .container-fluid {
   height: 100%;
   border: 2px solid #e3e3e3;
 }
-/* line 24, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+/* line 22, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
 .photo-slider .circles-links span {
   font-size: 25pt;
   color: #6464e1;
   text-shadow: 0px 0px 0 #0e24a5, -1px 1px 0 #1d1596, -2px 2px 0 #2b0788, -3px 3px 0 #3a0879, -4px 4px 0 #48166b, -5px 5px 0 #57255c, -6px 6px 0 #65334e, -7px 7px 6px rgba(0, 0, 0, 0.55), -7px 7px 1px rgba(0, 0, 0, 0.5), 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
-/* line 28, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
+/* line 26, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_photo-slider.scss */
 .photo-slider .circles-links span.active {
   color: #1f1fa0;
 }

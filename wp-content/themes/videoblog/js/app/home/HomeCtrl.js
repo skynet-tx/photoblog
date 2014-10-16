@@ -22,26 +22,49 @@
 		vm.isPicturesLoaded = false;
 		vm.collectedImages = [];
 		vm.carouselIndex2 = 2;
+		vm.lastPosts = [];
 
+		init();
 
-		// Init site title
-		getServices.getAPIEndpoint().then(function (response) {
-			if (response.statusText === "OK") {
-				angular.element("title").text(response.data.name + " | Home");
-			} else {
-				console.log(response);
-			}
-		});
+		function init(){
+			getAPIEndpoint();
+			getSliderImages();
+			getLastCountPosts();
+		}
 
-		// Init slider
-		getServices.getSliderImages().then(function (response) {
-			if (response.statusText === "OK") {
-				$log.debug("Server send media:", response.data);
-				collectImages(response.data);
-			} else {
-				console.log(response);
-			}
-		});
+		function getAPIEndpoint(){
+			// Init site title
+			getServices.getAPIEndpoint().then(function (response) {
+				if (response.statusText === "OK") {
+					angular.element("title").text(response.data.name + " | Home");
+				} else {
+					console.log(response);
+				}
+			});
+		}
+
+		function getSliderImages(){
+			// Init slider
+			getServices.getSliderImages().then(function (response) {
+				if (response.statusText === "OK") {
+					$log.debug("Server send media:", response.data);
+					collectImages(response.data);
+				} else {
+					console.log(response);
+				}
+			});
+		}
+
+		function getLastCountPosts(){
+			getServices.getLastCountPosts().then(function (response) {
+				if (response.statusText === "OK") {
+					$log.debug("Server send last Posts:", response.data);
+					collectLastPosts(response.data);
+				} else {
+					console.log(response);
+				}
+			});
+		}
 
 		function collectImages(data){
 			_.each(data, function(imageData, key){
@@ -53,13 +76,18 @@
 			}, vm.collectedImages);
 		}
 
-		getServices.getPostsCategories().then(function (response) {
-			if (response.statusText === "OK") {
-				$log.debug("Server send Posts Categories:", response.data);
-			} else {
-				console.log(response);
-			}
-		});
+		function collectLastPosts(posts){
+			_.forEach(posts, function(post){
+				this.push({
+					thumbnail: post.featured_image.attachment_meta.sizes.thumbnail.url,
+					title: post.title,
+					id: post.ID,
+					description: post.excerpt
+				})
+			}, vm.lastPosts);
+
+			console.log("vm.lastPosts", vm.lastPosts)
+		}
 
 
     }

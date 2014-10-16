@@ -33,7 +33,8 @@
 			getAPIEndpoint: getAPIEndpoint,
 			getSliderImages: getSliderImages,
 			getTaxonomies: getTaxonomies,
-			getPostsCategories: getPostsCategories
+			getPostsCategories: getPostsCategories,
+			getLastCountPosts: getLastCountPosts
 		};
 
 		function getPages() {
@@ -54,6 +55,14 @@
 
 		function getPostsCategories(){
 			return _get(urls.getPosts + "/types/posts/taxonomies/category/terms");
+		}
+
+		function getLastCountPosts(count){
+			var params = {
+				"filter[posts_per_page]": count || 6,
+				"filter[order]": "DESC"
+			};
+			return _get(urls.getPosts, params);
 		}
 
 		function getTaxonomies(params){
