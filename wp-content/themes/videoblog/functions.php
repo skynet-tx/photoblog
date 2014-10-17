@@ -30,6 +30,7 @@ function mytheme_enqueue_scripts() {
 
 
   wp_register_script('topMenu', get_template_directory_uri().'/js/app/topMenu.js', array('angular-core'), null, false);
+  wp_register_script('siteFooter', get_template_directory_uri().'/js/app/siteFooter.js', array('angular-core'), null, false);
   wp_register_script('HomeCtrl', get_template_directory_uri().'/js/app/home/HomeCtrl.js', array('angular-core'), null, false);
 
   // enqueue all scripts
@@ -55,6 +56,7 @@ function mytheme_enqueue_scripts() {
   wp_enqueue_script('bgShadow');
 
   wp_enqueue_script('topMenu');
+  wp_enqueue_script('siteFooter');
   wp_enqueue_script('HomeCtrl');
 
   // we need to create a JavaScript variable to store our API endpoint...

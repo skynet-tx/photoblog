@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+#main-footer {
+  position: relative;
+  height: 250px;
+  margin-bottom: -20px;
+  background: #1a1a1a;
+
+  .sine{
+	color: rgb(189,187,104);
+	font-size: 15px;
+	padding-left: 4%;
+	position: absolute;
+	bottom: 0;
+  	width: 100%;
+	font-style: italic;
+	span{
+	  font-family: 'Shadows Into Light', cursive;
+	  font-size: 20px;
+	}
+  }
+}

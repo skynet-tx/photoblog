@@ -69,7 +69,7 @@
 		function collectImages(data){
 			_.each(data, function(imageData, key){
 				this.push({
-					src: imageData.source,
+					src: imageData.attachment_meta.sizes.medium.url,
 					id: imageData.ID,
 					odd: (key % 2 === 0)
 				});
