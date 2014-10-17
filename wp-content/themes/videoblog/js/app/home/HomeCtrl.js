@@ -38,7 +38,7 @@
 				if (response.statusText === "OK") {
 					angular.element("title").text(response.data.name + " | Home");
 				} else {
-					console.log(response);
+					$log.error(response);
 				}
 			});
 		}
@@ -50,18 +50,18 @@
 					$log.debug("Server send media:", response.data);
 					collectImages(response.data);
 				} else {
-					console.log(response);
+					$log.error(response);
 				}
 			});
 		}
 
 		function getLastCountPosts(){
-			getServices.getLastCountPosts().then(function (response) {
+			getServices.getLastCountPosts(10).then(function (response) {
 				if (response.statusText === "OK") {
 					$log.debug("Server send last Posts:", response.data);
 					collectLastPosts(response.data);
 				} else {
-					console.log(response);
+					$log.error(response);
 				}
 			});
 		}
@@ -85,8 +85,6 @@
 					description: post.excerpt
 				})
 			}, vm.lastPosts);
-
-			console.log("vm.lastPosts", vm.lastPosts)
 		}
 
 

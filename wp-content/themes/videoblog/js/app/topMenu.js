@@ -13,10 +13,11 @@
 
     topMenu.$inject = [
         "$log",
-        "getServices"
+        "getServices",
+		"$templateCache"
     ];
 
-    function topMenu($log, getServices) {
+    function topMenu($log, getServices, $templateCache) {
         var directive = {
             link: link,
             replace: true,

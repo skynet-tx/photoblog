@@ -1,0 +1,20 @@
+.last-posts{
+  margin-top: 10px;
+	ul{
+	  list-style: none;
+	  padding-left: 0;
+	  margin-left: 40px;
+	  li{
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		.post-container{
+		  width: 228px;
+		  height: 228px;
+		  border: 4px double $br-blue1;
+		  overflow: hidden;
+		  @include border-radius(24px, 24px);
+		}
+	  }
+	}
+}

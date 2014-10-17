@@ -12418,3 +12418,30 @@ body .container-fluid {
 .photo-slider .circles-links span.active {
   color: #1f1fa0;
 }
+
+/* line 1, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+.last-posts {
+  margin-top: 10px;
+}
+/* line 3, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+.last-posts ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 40px;
+}
+/* line 7, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+.last-posts ul li {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+/* line 11, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+.last-posts ul li .post-container {
+  width: 228px;
+  height: 228px;
+  border: 4px double #6464e1;
+  overflow: hidden;
+  -webkit-border-radius: 14px 14px;
+  -moz-border-radius: 14px / 14px;
+  border-radius: 14px / 14px;
+}
