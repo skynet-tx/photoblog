@@ -15,10 +15,12 @@
 		<div class="row">
 			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
 			<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+				<h1 class="last-posts-title">Недавнии работы...</h1>
 				<ul>
 					<li ng-repeat="post in vm.lastPosts">
 						<div class="post-container">
 							<img src="{{post.thumbnail}}" alt="{{post.title}}">
+							<a href="/post/{{post.id}}" class="btn btn-primary btn-sm" >{{"Перейти..."}}</a>
 						</div>
 					</li>
 				</ul>

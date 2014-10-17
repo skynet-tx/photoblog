@@ -12424,24 +12424,60 @@ body .container-fluid {
   margin-top: 10px;
 }
 /* line 3, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+.last-posts .last-posts-title {
+  font-family: "Lobster", cursive;
+  margin-top: 0;
+}
+/* line 7, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
 .last-posts ul {
   list-style: none;
   padding-left: 0;
   margin-left: 40px;
 }
-/* line 7, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+/* line 11, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
 .last-posts ul li {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
 }
-/* line 11, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+/* line 15, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
 .last-posts ul li .post-container {
+  position: relative;
   width: 228px;
   height: 228px;
   border: 4px double #6464e1;
   overflow: hidden;
-  -webkit-border-radius: 14px 14px;
-  -moz-border-radius: 14px / 14px;
-  border-radius: 14px / 14px;
+  -webkit-border-radius: 6px 6px;
+  -moz-border-radius: 6px / 6px;
+  border-radius: 6px / 6px;
+}
+/* line 22, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+.last-posts ul li .post-container a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -36px;
+  display: none;
+  -moz-transition: all 3s ease-out;
+  -o-transition: all 3s ease-out;
+  -webkit-transition: all 3s ease-out;
+}
+/* line 32, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+.last-posts ul li .post-container img {
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+}
+/* line 38, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+.last-posts ul li .post-container:hover a {
+  display: block;
+  -moz-transition: all 3s ease-in;
+  -o-transition: all 3s ease-in;
+  -webkit-transition: all 3s ease-in;
+}
+/* line 44, c:/d/project/videoblog/wp-content/themes/videoblog/resources/sass/widgets/home-page/_last-posts.scss */
+.last-posts ul li .post-container:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }

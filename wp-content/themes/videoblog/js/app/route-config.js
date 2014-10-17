@@ -22,6 +22,11 @@
                 controller: 'HomeCtrl',
                 controllerAs: "vm"
             })
+			.when('/post/:id', {
+				templateUrl: BlogInfo.url +  'partials/home/home_view.html',
+				controller: 'HomeCtrl',
+				controllerAs: "vm"
+			})
             .otherwise({
                 redirectTo: '/error'
             });

@@ -78,8 +78,14 @@
 
 		function collectLastPosts(posts){
 			_.forEach(posts, function(post){
+				var image = "/wp-content/uploads/Semja-220x220.jpg";
+
+				if(post.featured_image){
+					image = post.featured_image.attachment_meta.sizes.thumbnail.url;
+				}
+
 				this.push({
-					thumbnail: post.featured_image.attachment_meta.sizes.thumbnail.url,
+					thumbnail: image,
 					title: post.title,
 					id: post.ID,
 					description: post.excerpt
